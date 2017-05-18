@@ -471,7 +471,7 @@ class Cosapi
                 return $ret;
             }
 
-            if ($ret['data']['session']) {
+            if (isset($ret['data']['session'])) {
                 $session = $ret['data']['session'];
             }
 
